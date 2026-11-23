@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@theme {
+  --color-blue-900: #0B1F4A;
+  --color-blue-700: #1A3A6B;
+  --color-blue-500: #2563EB;
+  --color-orange-600: #EA580C;
+  --color-orange-500: #F97316;
+  --color-green-600: #16A34A;
+  --color-red-600: #DC2626;
+}
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    color: #111827;
+  }
+  h1 { font-size: 2.25rem; font-weight: 800; }
+  h2 { font-size: 1.875rem; font-weight: 700; }
+  h3 { font-size: 1.5rem; font-weight: 600; }
+  h4 { font-size: 1.25rem; font-weight: 600; }
+  h5 { font-size: 1.125rem; font-weight: 500; }
+  h6 { font-size: 1rem; font-weight: 500; }
+  p  { line-height: 1.6; }
+}
+.leaflet-pane,
+.leaflet-top,
+.leaflet-bottom {
+  z-index: 10 !important;
+}
